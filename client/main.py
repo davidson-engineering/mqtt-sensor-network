@@ -27,7 +27,7 @@ def start_client():
 
     # Initialize the database client
     database_client = FastInfluxDBClient.from_config_file(
-        buffer=buffer, config_file="config/influx.toml"
+        buffer=buffer, config_file="config/.influx.toml"
     )
     # Start periodic writing to the database
     database_client.start()
