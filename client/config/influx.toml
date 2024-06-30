@@ -1,0 +1,14 @@
+[influx2]
+url = "http://docker-mqtt-metrics-manager-influxdb-1:8086"
+# url = "http://10.0.0.4:8086"
+token = "Zti7ek2d1Vr25w6SBFcdhT98q1Q3B3pZ"
+org = "davidson-home"
+timeout = 6000
+connection_pool_maxsize = 25
+auth_basic = false
+
+[database_client.influx]
+default_bucket = "home"
+default_write_precision = "s"
+write_batch_size = 5_000
+local_tz = "America/Vancouver"
